@@ -1,4 +1,103 @@
-# dotfiles
+# macOS Development Environment Setup
+
+This repository contains a setup script to configure a new macOS development environment with all the essential tools and applications for development.
+
+## Features
+
+The setup script (`install.sh`) automates the installation and configuration of:
+
+- **System Preferences**
+  - Shows hidden files in Finder
+  - Configures basic system settings
+
+- **Development Tools**
+  - XCode Command Line Tools
+  - Homebrew (package manager)
+  - Node.js (via NVM)
+  - Yarn (Node.js package manager)
+  - Composer (PHP package manager)
+  - GitHub CLI
+
+- **Shell Environment**
+  - Oh My Zsh
+  - Spaceship prompt
+  - ZSH plugins (autosuggestions, syntax highlighting)
+  - Custom ZSH configuration
+
+- **Applications**
+  - Browsers (Chrome, Firefox)
+  - Development tools (VS Code, iTerm2, Docker)
+  - Productivity apps (Rectangle, Maccy, Alfred, 1Password)
+  - Communication tools (Slack, Spark, Zoom)
+  - Design tools (Figma)
+  - Miscellaneous apps (Spotify)
+
+## Prerequisites
+
+- macOS operating system
+- Administrative privileges
+- Internet connection
+
+## Usage
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/kaustubh2708/dotfiles-main.git
+   cd dotfiles-main
+   ```
+
+2. Make the script executable:
+   ```bash
+   chmod +x install.sh
+   ```
+
+3. Run the installation script:
+   ```bash
+   ./install.sh
+   ```
+
+4. Follow any on-screen instructions, particularly for:
+   - Installing XCode Command Line Tools
+   - Setting up SSH keys for GitHub
+   - Installing applications that require manual download
+
+## Features of the Installation Script
+
+- **Idempotent**: Can be run multiple times safely
+- **Error Handling**: Stops on any error to prevent partial installations
+- **Progress Feedback**: Shows clear status messages for each step
+- **Dependency Checks**: Verifies if tools are already installed
+- **M1 Mac Support**: Includes specific configurations for Apple Silicon
+
+## Manual Steps After Installation
+
+1. **Generate SSH Key**:
+   - Follow the GitHub instructions that open automatically
+   - Add the SSH key to your GitHub account
+
+2. **Configure Applications**:
+   - Set up your preferences in each installed application
+   - Configure your development environment settings
+
+3. **Additional Setup**:
+   - Configure your Git identity
+   - Set up any additional development tools specific to your needs
+
+## Customization
+
+You can customize the installation by:
+
+1. Modifying the `install.sh` script to add or remove applications
+2. Editing the `.zshrc` file to change shell configurations
+3. Adding additional configuration files to the repository
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Install
 
@@ -54,7 +153,7 @@
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [zsh-completions](https://github.com/zsh-users/zsh-completions)
 - [zsh-you-should-use](https://github.com/MichaelAquilina/zsh-you-should-use)
-- [rupa’s z](https://github.com/rupa/z/)
+- [rupa's z](https://github.com/rupa/z/)
 
 </details>
 
@@ -114,4 +213,3 @@
 <!-- - [Rocket](http://matthewpalmer.net/rocket/) -->
 
 </details>
-# dotfiles
